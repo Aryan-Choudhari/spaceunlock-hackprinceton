@@ -45,6 +45,7 @@ P1 features include ten-budget comparison, rejected interventions, a clearly lab
 - Ten optimizations on the real office cache completed in approximately 0.070 seconds total on this machine.
 - A local Ollama five-tool run plus validation completed in approximately seven seconds; this is separate from engine performance.
 - Production frontend build passed.
+- Fresh public clone: dependency installation, all 27 tests, production build, static startup, fixture loading and optimization passed without private cache or credentials. Hosted CI could not start a runner; it is not marked passing.
 - Desktop and 390-pixel mobile browser regressions passed without JavaScript errors or horizontal overflow.
 - Browser coverage includes conditional scenario, budget change, approval, memo download, source removal, agent tool ordering and aerial imagery.
 - Floor-plan and 3D tour were visually inspected. The tour loaded successfully through normal Matterport sharing permissions.
@@ -59,5 +60,5 @@ P1 features include ten-budget comparison, rejected interventions, a clearly lab
 - Real geometric connections come from shared source doorway boundaries. They are not a surveyed accessibility graph.
 - Ollama is used directly. LangChain/deepagents and Photon stretch integrations are not claimed.
 - No CoStar property extract is used; the two verified sponsor layers are Matterport and Vexcel.
-- A local Git repository is prepared. Public GitHub publication, event registration/submission and final sponsor review have not been performed.
+- Public code-only repository: https://github.com/Aryan-Choudhari/spaceunlock-hackprinceton. Event registration/submission and final sponsor review have not been performed.
 - The local walkthrough recording is an engineering demo without narration; the two-minute presentation script is in DEMO.md.

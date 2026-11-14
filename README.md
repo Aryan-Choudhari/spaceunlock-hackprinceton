@@ -77,6 +77,8 @@ The browser script requires the local server, authorized private cache, and loca
 
 This is a local, trusted-user hackathon application, not an authenticated multiuser deployment. Legal approval, construction execution, Photon messaging and a LangChain/deepagents implementation are not included. The local agent uses direct Ollama structured calls. CoStar property-extract integration is not claimed: the two real sponsor layers are Matterport and Vexcel. Professional review and operator confirmation remain essential, and the app does not replace them.
 
-A local Git repository is initialized and the source is ready for publication, but GitHub publication, event submission and sponsor permission to publicly display licensed evidence remain separate external steps. Cached sponsor data is not distributed with source.
+The public code-only repository is https://github.com/Aryan-Choudhari/spaceunlock-hackprinceton. Event submission and sponsor permission to publicly display licensed evidence remain separate external steps. Cached sponsor data is not distributed with source.
 
 The pinned Python environment used for verification is recorded in `requirements-lock.txt`. The recorded local walkthrough is `docs/private/spaceunlock-demo.webm` (ignored because it displays sponsor data). Saved recommendations expose a **Verify reproducibility** action that replays their source snapshot.
+
+A fresh public clone was installed and checked without credentials: 27 tests, frontend production build, static startup, fixture loading and optimization passed. Hosted CI is configured but was unable to acquire a GitHub runner at verification time. A submission-ready factual draft is in `docs/SUBMISSION.md`.
