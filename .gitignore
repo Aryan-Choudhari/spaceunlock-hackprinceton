@@ -1,0 +1,14 @@
+.env
+.venv/
+node_modules/
+frontend/dist/
+__pycache__/
+.pytest_cache/
+data/*.sqlite*
+data/private/
+frontend/test-results/
+frontend/playwright-report/
+docs/private/
+
+# Original planning documents remain local.
+*.docx

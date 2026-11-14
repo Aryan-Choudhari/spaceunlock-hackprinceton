@@ -1,0 +1,129 @@
+[
+  {
+    "id": "alternate_entrance",
+    "name": "Activate alternate entrance",
+    "cost": 2000,
+    "edges": [
+      "street_to_entrance_B"
+    ],
+    "effects": {},
+    "prerequisites": [],
+    "cost_basis": "Simulated demo estimate; not a contractor quote",
+    "confidence": "estimated",
+    "approval_needed": [
+      "Owner permission",
+      "Professional review where applicable"
+    ],
+    "source_refs": [
+      "fixture-interventions"
+    ],
+    "incompatibilities": []
+  },
+  {
+    "id": "clear_hall",
+    "name": "Relocate hallway obstruction",
+    "cost": 3500,
+    "edges": [
+      "hall_to_flex"
+    ],
+    "effects": {},
+    "prerequisites": [],
+    "cost_basis": "Simulated demo estimate; not a contractor quote",
+    "confidence": "estimated",
+    "approval_needed": [
+      "Owner permission",
+      "Professional review where applicable"
+    ],
+    "source_refs": [
+      "fixture-interventions"
+    ],
+    "incompatibilities": [
+      "entrance_mod"
+    ]
+  },
+  {
+    "id": "flex_room",
+    "name": "Reallocate flexible room",
+    "cost": 4000,
+    "edges": [],
+    "effects": {
+      "flex_area": 90
+    },
+    "prerequisites": [],
+    "cost_basis": "Simulated demo estimate; not a contractor quote",
+    "confidence": "estimated",
+    "approval_needed": [
+      "Owner permission",
+      "Professional review where applicable"
+    ],
+    "source_refs": [
+      "fixture-interventions"
+    ],
+    "incompatibilities": []
+  },
+  {
+    "id": "signed_route",
+    "name": "Sign internal circulation route",
+    "cost": 500,
+    "edges": [],
+    "effects": {
+      "signed": true
+    },
+    "prerequisites": [
+      "clear_hall"
+    ],
+    "cost_basis": "Simulated demo estimate; not a contractor quote",
+    "confidence": "estimated",
+    "approval_needed": [
+      "Owner permission",
+      "Professional review where applicable"
+    ],
+    "source_refs": [
+      "fixture-interventions"
+    ],
+    "incompatibilities": []
+  },
+  {
+    "id": "pickup",
+    "name": "Designate pickup zone",
+    "cost": 2500,
+    "edges": [],
+    "effects": {
+      "pickup": true
+    },
+    "prerequisites": [],
+    "cost_basis": "Simulated demo estimate; not a contractor quote",
+    "confidence": "estimated",
+    "approval_needed": [
+      "Owner permission",
+      "Professional review where applicable"
+    ],
+    "source_refs": [
+      "fixture-interventions"
+    ],
+    "incompatibilities": []
+  },
+  {
+    "id": "entrance_mod",
+    "name": "Propose entrance modification",
+    "cost": 9000,
+    "edges": [
+      "street_to_entrance_B",
+      "hall_to_flex"
+    ],
+    "effects": {},
+    "prerequisites": [],
+    "cost_basis": "Simulated demo estimate; not a contractor quote",
+    "confidence": "estimated",
+    "approval_needed": [
+      "Owner permission",
+      "Professional review where applicable"
+    ],
+    "source_refs": [
+      "fixture-interventions"
+    ],
+    "incompatibilities": [
+      "clear_hall"
+    ]
+  }
+]

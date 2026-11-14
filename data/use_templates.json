@@ -1,0 +1,189 @@
+[
+  {
+    "id": "workshop",
+    "name": "Community workshop",
+    "weight": 3,
+    "requirements": [
+      [
+        "route:flex",
+        true
+      ],
+      [
+        "flex_area",
+        60
+      ]
+    ],
+    "gate": "Occupancy and fire review",
+    "minimum_area_sqm": 60,
+    "requirement_expression": {
+      "op": "AND",
+      "children": [
+        {
+          "check": 0
+        },
+        {
+          "check": 1
+        }
+      ]
+    },
+    "real_requirement_expression": {
+      "op": "AND",
+      "children": [
+        {
+          "check": 0
+        },
+        {
+          "check": 1
+        },
+        {
+          "check": 2
+        }
+      ]
+    }
+  },
+  {
+    "id": "service",
+    "name": "Nonprofit service desk",
+    "weight": 4,
+    "requirements": [
+      [
+        "route:office",
+        true
+      ],
+      [
+        "hours",
+        true
+      ]
+    ],
+    "gate": "Owner / tenant authorization",
+    "minimum_area_sqm": 12,
+    "requirement_expression": {
+      "op": "AND",
+      "children": [
+        {
+          "check": 0
+        },
+        {
+          "check": 1
+        }
+      ]
+    },
+    "real_requirement_expression": {
+      "op": "AND",
+      "children": [
+        {
+          "check": 0
+        },
+        {
+          "check": 1
+        },
+        {
+          "check": 2
+        },
+        {
+          "check": 3
+        }
+      ]
+    }
+  },
+  {
+    "id": "distribution",
+    "name": "Goods distribution",
+    "weight": 5,
+    "requirements": [
+      [
+        "route:flex",
+        true
+      ],
+      [
+        "pickup",
+        true
+      ],
+      [
+        "flex_area",
+        60
+      ]
+    ],
+    "gate": "Operating permission and site safety",
+    "minimum_area_sqm": 60,
+    "requirement_expression": {
+      "op": "AND",
+      "children": [
+        {
+          "check": 0
+        },
+        {
+          "check": 1
+        },
+        {
+          "check": 2
+        }
+      ]
+    },
+    "real_requirement_expression": {
+      "op": "AND",
+      "children": [
+        {
+          "check": 0
+        },
+        {
+          "check": 1
+        },
+        {
+          "check": 2
+        },
+        {
+          "check": 3
+        },
+        {
+          "check": 4
+        }
+      ]
+    }
+  },
+  {
+    "id": "cowork",
+    "name": "Shared coworking",
+    "weight": 2,
+    "requirements": [
+      [
+        "route:office",
+        true
+      ],
+      [
+        "power",
+        true
+      ]
+    ],
+    "gate": "Zoning, lease and life safety review",
+    "minimum_area_sqm": 20,
+    "requirement_expression": {
+      "op": "AND",
+      "children": [
+        {
+          "check": 0
+        },
+        {
+          "check": 1
+        }
+      ]
+    },
+    "real_requirement_expression": {
+      "op": "AND",
+      "children": [
+        {
+          "check": 0
+        },
+        {
+          "check": 1
+        },
+        {
+          "check": 2
+        },
+        {
+          "check": 3
+        }
+      ]
+    }
+  }
+]
